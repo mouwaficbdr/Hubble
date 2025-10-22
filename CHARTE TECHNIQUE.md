@@ -2,7 +2,7 @@
 
 ## § Synthèse d'Onboarding Parfait
 
-Hubble repose sur une architecture Domain Driven Design (feature-based), un typage intégral TypeScript, et une rigueur collaborative inspirée des standards SaaS modernes. Chaque ligne de code doit renforcer la clarté, la cohérence et la maintenabilité du produit.
+Hubble repose sur une architecture Domain Driven Design (feature-based), un typage intégral TypeScript, et une rigueur personnelle inspirée des standards SaaS modernes. Chaque ligne de code renforce la clarté, la cohérence et la maintenabilité du produit.
 
 ---
 
@@ -18,6 +18,10 @@ Hubble repose sur une architecture Domain Driven Design (feature-based), un typa
 | Validation | Zod | Validation et typage des schémas (API, forms, stores). |
 | Formulaires | React Hook Form | Gestion réactive et performante des formulaires. |
 | Routing | React Router | Routage applicatif entre espaces, projets, tâches, etc. |
+| Backend | Node.js | Environnement d'exécution JavaScript côté serveur. |
+| Framework Backend | Express.js | Framework web minimaliste pour Node.js. |
+| Base de données | PostgreSQL | Système de gestion de base de données relationnelle. |
+| ORM | Prisma | ORM de nouvelle génération pour Node.js et TypeScript. |
 | Style | Tailwind CSS | Styling utility-first et design system modulaire. |
 | Tests | Vitest + Testing Library | Tests unitaires et d'intégration ciblés. |
 | Icônes | Lucide React | Librairie d'icônes claire et légère. |
@@ -49,6 +53,11 @@ src/
 ├── lib/          # Fonctions utilitaires globales (queryKeys, formatDate)
 └── types/        # Types globaux partagés
 ```
+
+### Architecture Backend
+
+Le backend est construit avec Node.js et Express.js, utilisant PostgreSQL comme base de données et Prisma comme ORM. L'architecture sera également orientée par domaine, avec des modules séparés pour l'authentification, les utilisateurs, les projets, etc., afin de maintenir une bonne séparation des préoccupations et une maintenabilité élevée.
+
 
 ---
 
@@ -116,46 +125,12 @@ src/
 
 - Tester les composants critiques : tâches, chat, hooks métier.
 - Ne pas tester les détails d'implémentation mais les comportements utilisateurs.
-- Aucune PR ne doit casser les tests existants.
-- **Minimum :** 1 test fonctionnel par domaine clé.
-
----
-
-## 3. Collaboration et Discipline Collective
-
-### 3.1 Git Flow
-
-- Branche principale protégée (`main` ou `develop`).
-- Une branche = une tâche/un ticket.
-- Commits atomiques et explicites (Conventionnal Commits) :  
-  `feat: add task drag & drop`, `fix: chat scroll behavior`.
-
-### 3.2 Pull Requests
-
-- PRs courtes (< 300 lignes modifiées).
-- Description claire + capture ou GIF pour les changements visuels.
-- Revue obligatoire avant merge (minimum 1 approbation).
-- Interdiction de merger un build cassé ou un test rouge.
-
-### 3.3 Discipline de Développement
+## 3. Discipline Personnelle
 
 - Aucune trace de `console.log` dans le code final.
 - Supprimer le code mort.
 - Lancer `npm run dev` et tester avant chaque push.
-- Chaque composant, store ou hook doit être documenté (JSDoc ou README local).
-
-### 3.4 Communication et Synchronisation
-
-- Annoncer le début et la fin de chaque tâche sur Discord.
-- Signaler immédiatement tout blocage technique.
-- Les décisions techniques majeures sont centralisées dans le canal "architecture".
-- Toute modification d'architecture nécessite un vote d'équipe.
-
-### 3.5 Mentalité d'Équipe
-
-- **Propriété partagée :** le code appartient à l'équipe, mais chacun reste responsable du sien.
-- **Cohérence > préférence personnelle.**
-- **Objectif :** lisibilité, maintenabilité, clarté.
+- Documenter les composants, stores ou hooks si nécessaire pour la clarté future.
 
 ---
 
