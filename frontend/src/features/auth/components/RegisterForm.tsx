@@ -1,7 +1,7 @@
 const RegisterForm = () => {
   return (
     <div>
-      
+      RegisterForm
     </div>
   );
 };

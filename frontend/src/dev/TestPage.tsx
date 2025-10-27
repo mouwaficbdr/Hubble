@@ -1,7 +1,9 @@
+import { FormButton } from "../shared/components";
+
 const TestPage = () => {
   return (
     <div>
-      Test Page
+      <FormButton/>
     </div>
   );
 };
