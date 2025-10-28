@@ -1,9 +1,9 @@
-import { FormButton } from "../shared/components";
+import { Button } from "../shared/Button";
 
 const TestPage = () => {
   return (
     <div>
-      <FormButton/>
+      <Button/>
     </div>
   );
 };
