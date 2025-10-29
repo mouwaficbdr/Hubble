@@ -5,6 +5,8 @@
 @theme {
   --color-primary: #00ffcc66;
   --color-button-primary-hover: #38F2C4;
+  --color-secondary: #4285F4;
+  --color-button-secondary-hover: #3A7DE1;
 
   --font-grotesk: 'Grotesk', sans-serif;
 }
