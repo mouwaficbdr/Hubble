@@ -15,7 +15,7 @@ const sizeStyles: Record<ButtonSize, string> = {
   lg: 'py-3 px-6 text-lg',
 }; 
 
-export const Button: React.FC<ButtonProps> = ({
+const Button: React.FC<ButtonProps> = ({
   children,
   disabled,
   className,
@@ -40,3 +40,5 @@ export const Button: React.FC<ButtonProps> = ({
     <button className={finalClasses} disabled={disabled} {...rest}>{children}</button>
   );
 };
+
+export default Button;

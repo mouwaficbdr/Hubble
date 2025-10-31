@@ -1,9 +1,22 @@
+import type { LogoProps } from "./Logo.types";
+import clsx from "clsx";
 
+const Logo: React.FC<LogoProps> = ({
+  size = "md",
+  href = "#",
+  className,
+  ...rest
+}: LogoProps) => {
+  
+  const baseClasses = ''
 
-export const Logo = () => {
+//  const finalClasses = 
+
   return (
-    <div>
-      
-    </div>
+    <a className={className} href={href} {...rest}>
+      Logo
+    </a>
   );
 };
+
+export default Logo;
