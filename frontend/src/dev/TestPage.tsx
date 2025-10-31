@@ -1,9 +1,9 @@
-import { Button } from "../shared/Button";
+import { Logo } from "../shared/Logo";
 
 const TestPage = () => {
   return (
     <div>
-      <Button>Button</Button>
+      <Logo/>
     </div>
   );
 };
