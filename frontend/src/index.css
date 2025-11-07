@@ -4,13 +4,25 @@
 
 @theme {
   --color-primary: #00ffcc66;
+  --color-primary-accent: #00FFCC;
   --color-button-primary-hover: #38F2C4;
   --color-secondary: #4285F4;
   --color-button-secondary-hover: #3A7DE1;
+  --color-glow: rgba(0, 255, 204, 0.4);
 
-  --font-grotesk: 'Grotesk', sans-serif;
+
+  --font-grotesk: 'Space Grotesk', sans-serif;
 }
 
 body{
   font-family: var(--font-grotesk);
 }
+
+.logo-icon{
+  text-shadow: 0 0 10px var(--color-glow);
+  animation: starTwinkle 3s infinite alternate;
+}
+@keyframes starTwinkle {
+          0%, 100% { opacity: 1; transform: scale(1); }
+          50% { opacity: 0.8; transform: scale(1.05); }
+      }

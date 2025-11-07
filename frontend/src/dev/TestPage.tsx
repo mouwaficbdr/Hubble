@@ -2,7 +2,7 @@ import { Logo } from "../shared/Logo";
 
 const TestPage = () => {
   return (
-    <div>
+    <div className="bg-black min-h-screen">
       <Logo/>
     </div>
   );
