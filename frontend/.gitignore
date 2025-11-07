@@ -25,4 +25,4 @@ dist-ssr
 
 
 # Development
-./src/dev
+src/dev/
